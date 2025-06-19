@@ -1,13 +1,11 @@
 
 import { Link } from 'react-router'
 import { Footer } from '../Components/Footer'
-import { Navbar } from '../Components/Navbar'
 import loginImg from '../../src/assets/register.svg'
 
 export const Login = () => {
   return (
     <>
-    <Navbar/>
     <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-pink-100 flex items-center justify-center py-10">
         <div className="grid sm:grid-cols-2 gap-10 bg-white rounded-3xl  overflow-hidden w-full max-w-5xl">
           {/* Form Section */}

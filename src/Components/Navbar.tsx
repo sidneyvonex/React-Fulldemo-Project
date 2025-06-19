@@ -1,5 +1,6 @@
 
 import { FaHome, FaInfo, FaPhone, FaSignInAlt } from 'react-icons/fa'
+import { MdSpaceDashboard } from 'react-icons/md'
 import { Link } from 'react-router'
 
 export const Navbar = () => {
@@ -17,6 +18,7 @@ export const Navbar = () => {
         <li><Link to= "/">< FaHome className='w-5 h-5 text-green-600'/>Home</Link></li>
         <li><Link to="/Contact"><FaPhone className='w-5 h-5 text-green-600'/>Contact</Link></li>
         <li><Link to="/about"><FaInfo className='w-5 h-5 text-green-600'/>About</Link></li>
+        <li><Link to="/dasboard"><MdSpaceDashboard  className='w-5 h-5 text-green-600'/>Dashboard</Link></li>
         <li><Link to="/login"><FaSignInAlt  className='w-5 h-5 text-green-600'/>Login</Link></li>
       </ul>
     </div>
@@ -27,6 +29,7 @@ export const Navbar = () => {
         <li><Link to= "/">< FaHome className='w-5 h-5 text-green-600'/>Home</Link></li>
         <li><Link to="/Contact"><FaPhone className='w-5 h-5 text-green-600'/>Contact</Link></li>
         <li><Link to="/about"><FaInfo className='w-5 h-5 text-green-600'/>About</Link></li>
+        <li><Link to="/dashboard"><MdSpaceDashboard  className='w-5 h-5 text-green-600'/>Dashboard</Link></li>
         <li><Link to="/login"><FaSignInAlt  className='w-5 h-5 text-green-600'/>Login</Link></li>
     </ul>
   </div>
