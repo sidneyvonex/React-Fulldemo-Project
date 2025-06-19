@@ -39,9 +39,9 @@ export const Login = () => {
                 id="pasword"
                 placeholder="Password"
               />
-              <button type="submit" className="btn btn-s btn-circle btn-block mt-4 shadow-md hover:scale-105 transition-transform">
+              <Link to= '/dashboard' type="submit" className="btn btn-s btn-circle btn-block mt-4 shadow-md hover:scale-105 transition-transform">
                 Login
-              </button>
+              </Link>
               <div className="flex  text-center mt-4">
                 <Link to="/" className="text-blue-500 hover:underline flex items-center justify-center gap-1">
                   <span role="img" aria-label="home">🏡</span> Go to HomePage
