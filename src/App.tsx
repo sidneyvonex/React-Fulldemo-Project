@@ -1,7 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import './App.css'
-
-import './App.css'
 import { Home } from './Pages/Home'
 import { Register } from './Pages/Register'
 import { Login } from './Pages/Login'
@@ -12,6 +10,7 @@ import { Dashboard } from './Pages/Dashboard'
 import { ProfileComponent } from './Components/Dashboard/ProfileComponent'
 import { Orders } from './Components/Dashboard/Orders'
 import { MyPayment } from './Components/Dashboard/MyPayment'
+import ProtectedRoute from './Components/ProtectedRoute'
 
 
 function App() {
@@ -33,7 +32,7 @@ const router = createBrowserRouter([
 },
 {
   path:'/dashboard',
-  element:<Dashboard/>,
+  element:(<ProtectedRoute><Dashboard/></ProtectedRoute>),
   errorElement:<Error/>,
   children:[{
     path:'profile',

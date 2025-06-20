@@ -1,10 +1,12 @@
 
+import Container from '../Components/Container'
 import { Footer } from '../Components/Footer'
 import { Navbar } from '../Components/Navbar'
 
 export const Contact = () => {
   return (
     <>
+    <Container className="bg-gradient-to-br from-blue-100 via-white to-pink-100 flex flex-col gap-6">
         <Navbar/>
         <div className="min-h-screen bg-white p-6 text-gray-800">
       {/* Heading */}
@@ -48,6 +50,7 @@ export const Contact = () => {
       </div>
     </div>
         <Footer/>
+        </Container>
     </>
   )
 }
